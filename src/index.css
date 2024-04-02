@@ -19,4 +19,14 @@
 #root{
   min-width: 100vh;
   display: flex;
+  animation: fadeIn 1.4s;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
