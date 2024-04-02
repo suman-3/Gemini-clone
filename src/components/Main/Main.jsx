@@ -4,7 +4,10 @@ import {
   bulb_icon,
   code_icon,
   compass_icon,
+  gallery_icon,
   message_icon,
+  mic_icon,
+  send_icon,
   user_icon,
 } from "../../assets";
 
@@ -24,7 +27,7 @@ const Main = () => {
           <p className="mb-3">
             <span>Hello, Dev.</span>
           </p>
-          <p className="text-5xl" >How Can I Help You Today?</p>
+          <p className="text-5xl">How Can I Help You Today?</p>
         </div>
         <div className="cards">
           <div className="card">
@@ -43,6 +46,21 @@ const Main = () => {
             <p>Tell me about React js and React native</p>
             <img src={code_icon} alt="" />
           </div>
+        </div>
+
+        <div className="main-bottom">
+          <div className="search-box flex items-center justify-between gap-5 bg-[#f0f4f9] py-2 px-5 rounded-[30px]">
+            <input type="text" placeholder="Enter a prompt here" />
+            <div className="flex items-center gap-3">
+              <img src={gallery_icon} alt="" />
+              <img src={mic_icon} alt="" />
+              <img src={send_icon} alt="" />
+            </div>
+          </div>
+          <p className="bottom-info">
+            Gemini may display inaccurate info, including about people, so
+            double-check its responses. Your privacy and Gemini Apps
+          </p>
         </div>
       </div>
     </div>
